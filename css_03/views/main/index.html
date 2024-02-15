@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+
+<!--
+    <img />는 이미지를 삽입할 때 사용하는 태그
+    src(source)라는 속성을 사용해서 삽입할 때 이미지의 경로를 지정
+    alt(alternative)라는 속성은 이미지를 출력하지 못하는 상황에 이미지 대신 보여질 텍스트를 지정
+    <div></div>는 의미를 가지지 않는 태그로 어떤 내용이든 묶어내는 기능(Wrap)
+    홍길동 이라는 텍스트를 묶었으나 그 내용이 무엇을 의미하는지 알 수 없기 때문에 name이라는 태그 별명class를 추가
+    <img /> 태그가 없다면 빈 태그(Empty tag)라 함
+    <section></section>안에는(콘텐츠) <h1></h1>, <ul></ul>, <li></li>가 있고,
+    <ul></ul>안에는(콘텐츠) <li></li>가 있음
+    <section>는 <h1>과 <ul>의 부모 요소
+    <ul>은 <li>의 부모 요소
+    <h1>과 <ul>은 <section>의 자식 요소
+    <li>는 <ul>의 자식 요소
+    <section>은 <li>의 조상(상위) 요소,
+    반대로 <li>는 <section>의 후손(하위) 요소-->
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>mysite</title> 
+    <!--웹페이지 제목-->
+    <link href="../../assets/css/mysite.css" rel="stylesheet"> 
+    <!--링크 불러올때 사용-->
+    <link href="../../assets/css/main.css" rel="stylesheet">
+
+    <style></style>
+    <!--CSS를 외부 문서에서 작성하여 연결하는 것이 아닌, HTML 문서 내에서 작성할 때 사용-->
+
+</head>
+
+<body>
+    <!--<div></div>의 'div'는 'division'의 약자로, '분할'이라는 뜻 (그룹화 한다)-->
+
+    <div id="wrap">
+        <div id="header" class="clearfix">
+            <h1>MySite</h1> <!--타이틀 이름-->
+
+            <ul class="clearfix"> <!--ul 영문 뜻과 같이 순서를 따지지 않는 목록을 나타낼 때 사용-->
+                <li><a href="">로그인</a></li> <!--li목록생성-->
+                <li><a href="">회원가입</a></li>
+            </ul>
+        </div>
+        
+        <div id="nav">
+            <ul class="clearfix">
+                <li><a href="">입사지원서</a></li>
+                <li><a href="">게시판</a></li>
+                <li><a href="">갤러리</a></li>
+                <li><a href="">방명록</a></li>
+            </ul>
+        </div>
+        
+        
+        <div id="contents" class="clearfix">
+            <img id="profile" src="../../assets/images/jung.jpg"> <!--이미지를 건다-->
+            
+            <div id="greeting-box">
+                <p class="greeting">
+                    안녕하세요!!<br>
+                    황일영의 Mysite에 오신 것을 환영합니다<br>
+                    <br>
+                    이 사이트는 웹 프로그래밍 실습과제 예제 사이트입니다.<br>
+                    <br>
+                </p>
+                
+                <p><!--단락, paragraph 사용하면 내용 앞뒤로 빈 줄이 생기면서 단락이 생긴다.-->
+                    사이트소개, 회원가입, 방명록, 게시판으로 구성되어 있으며<br>
+                    jsp&servlet(모델2) 방식으로 제작되었습니다<br>
+                    <br>
+                    자바 수업 + 데이터베이스 수업 + 웹프로그래밍 수업<br>
+                    배운거 있는거 없는거 다 합쳐서 만들어 놓은 사이트 입니다<br>
+                    <br><br>
+                    <a href="">[방명록에 글 남기기]</a>
+                    <br>
+                </p> 
+            </div>   
+        </div>
+        
+        
+        <div id="footer">
+            <p>
+                Copyright ⓒ2024 오지원 All right reserved
+            </p>
+        </div>
+    </div>
+
+
+</body>    
+
+</html>

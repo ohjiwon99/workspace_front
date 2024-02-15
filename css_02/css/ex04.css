@@ -1,22 +1,23 @@
 @charset "UTF-8";
 
-table{
 
+
+table {
     width: 900px;
     border: 1px solid #000000;
-    border-collapse: collapse ;
+    border-collapse: collapse;
 }
 
-table>thead>tr{
-    background-color: #dddddd;
+table>thead>tr {
+    background-color: #555555;
 }
+
 
 table>thead>tr>th {
     font-weight: bold;
-    
 }
 
-table>thead>tr>th ,table>tbody>tr>td {
+table>thead>tr>th, table>tbody>tr>td {
     border: 1px solid #000000;
     text-align: center;
 }
@@ -25,4 +26,4 @@ table>tbody>tr:hover{
     background-color: #ffff00;
 }
 
-.txt-left{text-align: left;}
+.txt-left {text-align: left;}

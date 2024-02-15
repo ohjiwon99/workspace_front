@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/******************************************
+* 공통
+******************************************/
+/*여백초기화*/
+body, div,  dl, dt, ol, ul, li,
+h1, h2, h3, h4, h5, h6, input, 
+fieldset, legend, p, select, 
+table, th, td, tr, textarea, 
+button, form {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "맑은 고딕", 돋음, 굴림;
+    font-size: 12px;  
+}
+
+a:link{text-decoration: none; color: #000000;}
+a:visited{text-decoration: none; color: #000000;}
+a:hover{text-decoration: none; color: #000000;}
+a:active{text-decoration: none; color: #000000;}
+
+/* clearfix */
+.clearfix::before, .clearfix::after {display: block; content: ""; line-height: 0;}
+.clearfix::after {clear: both;}
+
+
+/* ul li 리스트 */
+ul, ol {list-style-type: none;}
+
+
+
+/*레이아웃*/
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#wrap #header{
+    padding: 10px 0px 10px 0px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+
+
+    /*border:1px solid #000000;*/
+}
+
+#wrap #nav{
+    padding: 15px 0px 15px 0px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+}
+
+/*메인페이지 1단*/
+#wrap #contents{
+    padding: 30px 10px 30px 10px;
+    background-color: #ffffff;
+}
+
+/*메인페이지 2단*/
+#wrap #contents2 {
+    padding: 20px 0px 20px 0px;
+    
+}
+
+
+#wrap #footer{
+    padding: 15px 10px 15px 10px;
+    background-color: #e7eaed;
+    text-align: center;
+    border:1px solid #e7eaed;
+}
+
+
+/* header */
+#header h1{  
+    float: left;
+    font-size: 35px;
+    color: #79b30b;
+}
+
+#header ul{
+    float: right;
+    margin: 14px 0px 0px 0px;
+}
+
+
+#header ul>li{
+    float: left;
+    margin: 0px 0px 0px 10px;
+    padding: 3px 5px 3px 5px;
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+
+/* nav */
+#nav ul>li  {
+    width: 250px;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;    
+}
+/* contents */
+#contents P{
+    /*color: #e7eaed;*/
+}
+
+
+/* footer */
+#footer p{
+    font-size: 15px;
+    
+}
+
+
+#contents2 #aside{
+    width: 180px;
+    float: left;
+}
+
+
+#contents2 #aside h2{
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    background-color: #dddddd;
+}
+
+#contents2 #aside ul{
+    width: 160px;
+}
+
+#contents2 #aside ul>li{
+    margin-top: 5px;
+    padding: 8px 0px 8px 10px;
+    font-size: 15px;
+    border: 1px solid #a6a6a6;
+
+}
+
+
+#contents2 #main{
+    width: 816px;
+    float: left;
+}
+
+
+
+
+
+

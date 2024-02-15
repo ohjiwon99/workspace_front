@@ -5,49 +5,59 @@
         <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
         <title>스타일시트</title>
         <!-- 스타일시트자리 -->
-
-
         <style>
+            /*
+            div{
+                border-width: 1px;
+                border-style: dashed;
+                border-color: #ff0000;
+            }
+            */
 
-         .box{
-            width: 300px;
-            height: 150px;
-            background-color: #ffff00;
-            border-top: 4px solid #000000;
-            border-right: 14px double #ff0000;
-            border-bottom: 1px ;
-            border-left: 15px ;
+            /*div{ border: 1px solid #000000; }*/
 
-
-
-         }
+            .box{
+                width: 300px;
+                height: 150px;;
+                background-color: #ffff00;
+                border-top: 4px solid #000000;
+                border-right: 14px double #ff0000;
+                border-bottom: 1px dashed #00ff00;
+                border-left: 7px dotted #ff0000;
+            }
 
 
         </style>
+
+
     </head>
 
     <body>
-      <div>안녕하세요</div>
+        <div>안녕하세요</div>
+        <br><br><br>
 
-      <div class="box">
-        *위치별 선지정 <br>
-        가로380px,세로150px<br>
-        배경색 노란색<br>
-        선두께 모두 4px<br>
-        선모양 그림참고<br>
-      </div>
+        <div class="box">
+            *위치별 선지정<br>
+            가로 300px, 세로 150px<br>
+            배경색 노란색<br>
+            선두께 모두 4px<br>
+            선모양 그림참고<br>
+        </div>
 
-      <p class="box">
-        *위치별 선지정 <br>
-        가로380px,세로150px<br>
-        배경색 노란색<br>
-        선두께 모두 4px<br>
-        선모양 그림참고<br>
-      </p>
 
-      <h1 class="box">제목입니다</h1>
-        <span class="box">span-태그입니다</span>
+        <p class="box">
+            *위치별 선지정<br>
+            가로 300px, 세로 150px<br>
+            배경색 노란색<br>
+            선두께 모두 4px<br>
+            선모양 그림참고<br>
+        </p>
 
+        <h1 class="box">제목입니다.</h1>
+
+        <span class="box">span-태그입니다.</span>
+
+        <br><br><br><br><br><br><br>
     </body>
 
 </html>

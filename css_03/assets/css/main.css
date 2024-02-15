@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+/* 메인 */
+
+body, div,  dl, dt, ol, ul, li,
+h1, h2, h3, h4, h5, h6, input, 
+fieldset, legend, p, select, 
+table, th, td, tr, textarea, 
+button, form{
+
+    margin: 0px;
+    padding: 0px;
+}
+
+/* clearfix */
+.clearfix::before, .clearfix::after {display: block; content: ""; line-height: 0;}
+.clearfix::after {clear: both;}
+
+
+
+
+ol, ul {
+    list-style-type: none;
+}
+
+body {
+    
+    font-family: "맑은 고딕";
+    font-size: 12px;
+   
+    
+}
+
+
+.content2{
+    width: 700px;
+    background-color: #ffffff;
+  
+}
+
+.content2 fieldset{
+    width: 700px;
+    background-color: #dddddd;
+    text-align: center;
+}
+
+
+
+/* 아이디 */
+.content2 h3 {
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+
+
+/* 폼그룹 */
+.content2 .form-group{
+    margin-bottom: 10px;
+    
+   
+    
+    /*background-color: #0000ff;*/
+}
+
+ /* 폼타이틀 */
+.content2 .form-group .form-text {
+    display: inline-block;
+    width: 80px;
+   
+}
+
+
+/* 아이디 */
+.content2 .form-group #txt-id {
+    width: 600px;
+    float: right;
+}
+
+/* 패스워드 */
+.content2 .form-group #txt-pw {
+    width: 600px;
+    
+}
+
+/* 이름 */
+.content2 .form-group #txt-name {
+    width: 600px;
+   
+}
+
+/* 성별-폼 라디오버튼 */
+.content2 .form-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+
+/* 약관동의-폼 체크박스 */
+.content2 .form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* 회원가입 버튼 영역 */
+.content2 .btn-area {
+    padding: 20px 0px 20px 0px;
+    border-top: 1px solid #000000;
+    text-align: center; 
+}
+
+.content2 .btn-area button{
+    width: 60px;
+    height: 30px;
+}
+
+
+
+
+#contents #profile{
+    width: 300px;
+    float: left;
+    margin-right: 30px;
+}
+
+#contents #greeting-box {
+    float: left;
+    font-size: 18px;
+}
+
+#contents #greeting-box .greeting {
+    font-weight: bold;
+}
+
+
+a:link {text-decoration: none; color: black;}
+a:visited {text-decoration: none; color: black;}
+a:hover {text-decoration: none; color: black;}
+a:active {text-decoration: none; color: black;}
+
+
+
+/* clearfix */
+.clearfix::before, .clearfix::after{
+    display: block;
+    content: "";
+    line-height: 0;
+}
+.clearfix::after {
+    clear: both;
+}
+/* /clearfix */
+
+
+
+/* 레이아웃 */
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#wrap #header {
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #dddddd;
+   
+}
+
+#wrap #nav {
+    padding: 15px 0 15px 0;
+    border-bottom: 1px solid #dddddd;
+   
+}
+/* header */
+#header h1 {
+    float: left;
+    font-size: 35px;
+    color: #79b30b;
+}
+#header ul {
+    float: right;
+    margin: 14px 10px ;
+}
+#header ul>li {
+    float: left;
+    margin: 0px 0px 0 10px;
+    padding: 3px 5px 3px 5px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    font-size: 10px;
+    background-color: white;
+}
+
+#header ul>li:hover{
+    background-color: white;
+}
+
+/* nav */
+#nav ul>li {
+    width: 250px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#wrap #footer {
+    padding: 10px 10px 10px 10px;
+    /* border-bottom: 1px solid #dddddd; */
+    text-align: center;
+    background-color: #dddddd;
+}
+
+
+
+
+
+
+
+
+
