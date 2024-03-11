@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+
+<head>
+    <title>자바스크립트</title>
+    <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+
+
+    <!-- 화면에 여기있는 글자를 출력해라 -->
+</head>
+
+<body>
+
+    <h1>자바스크립트</h1>
+    <h2>소제목</h2>
+
+    <script>
+        //객체지향 정의
+        let guestbookVo = {
+            name: "정우성",
+            pw: "1234",
+            content: "방문합니다.",
+            showInfo: function (a, b) {
+                console.log("#" + this.name + "," + this.pw + "," + this.content);
+            }
+        }; // (=) 아니라 필드 안에서는 (:) 사용!! 많이 틀리니까 꼭 기억하기
+
+        console.log(guestbookVo.name);
+        console.log(guestbookVo.pw);
+        console.log(guestbookVo.content);
+        console.log(guestbookVo);
+
+        guestbookVo.name = "박명수";
+        guestbookVo.pw = "abcd";
+        guestbookVo.showInfo();
+        console.log(guestbookVo);
+
+        //////////////////////////////////
+        //다른 표기법
+        console.log(guestbookVo["name"]);
+        console.log(guestbookVo["pw"]);
+        console.log(guestbookVo["content"]);
+        guestbookVo.showInfo();
+
+        console.log("--------------------------------------------------");
+        //////////////////////////////////
+        //객체정의 _ 생성 이후에 초기화(값을 나중에 넣어야 할때)
+        let guestVo = {} // 필드 밖 객체이기 때문에 (:)아니고 (=)
+        guestVo.name = "이효리";
+        guestVo.pw = "1234";
+        guestVo.content = "이효리 방문";
+        console.log(guestVo);
+        guestVo.showInfo = function (a, b) {
+            console.log("#" + this.name + "," + this.pw + "," + this.content);
+        }
+        guestVo.age = 12;
+        console.log(guestVo);
+        guestVo.showInfo();
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+
+</html>
