@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <title>자바스크립트</title>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <!-- 스타일시트자리 -->
+    </head>
+
+    <body>
+
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+
+    </body>
+<script>
+    window.console.log("=====================================");
+    let code = window.prompt("과목코드를 입력하세요"); //같은게 없으면 window생략가능
+    console.log(typeof code);
+    console.log(code);
+    
+    let no = Number.parseInt(code) //"1" ==> 1 Number도 같은게 없으면 생략 가능
+
+    switch(no){
+        case 1:
+            console.log("R101호");
+            break;
+        case "2":
+            console.log("R202호");
+            break;
+        case "3":
+            console.log("R303호");
+            break;
+        case "4":
+            console.log("R404호");
+            break;
+        default:
+            console.log("상담원");
+            break;
+    }
+</script>
+
+</html>

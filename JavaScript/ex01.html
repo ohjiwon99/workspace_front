@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <title>자바스크립트</title>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        
+    </head>
+
+    <body>
+
+        <h1>자바스크립트</h1>
+        <h2>기본데이터타입</h2>
+    </body>
+
+<SCript>
+//Window.console.log("aaaa");  //Window생략가능
+console.log("====================================================");
+console.log("#데이터타입 확인");
+//자바스크립트 기본자료형은 number, string, boolean (이름은 다 소문자)
+console.log(typeof 1); //number
+console.log(typeof 1.5); //number
+console.log(typeof '한'); //string
+console.log(typeof "안녕하세요"); //string
+console.log(typeof (6>5)); //boolean
+console.log(typeof (6<5)); //boolean
+
+console.log("===================================================");
+console.log("#number형");
+//•연산자: + - * / %
+console.log(13+5); //18
+console.log(13-5); //8
+console.log(13*5); //65
+console.log(13/5); //2.6
+console.log(13%5); //3
+
+console.log(13+5.2); //18.2
+
+console.log(5+3*2); //11
+console.log((5+3)*2); //16
+
+console.log("===================================================");
+console.log("#string형");
+//•이스케이프문자: \t   \n   \'   \"   \\ 
+console.log("동해물과 백두산이"); // 동해물과 백두산이
+console.log('동해물과 백두산이'); // 동해물과 백두산이
+
+console.log("동해물과 '백두산'이");// 동해물과 '백두산'이
+console.log('동해물과 "백두산"이');// 동해물과 "백두산"이
+
+console.log("동해물과 \"백두산\"이");// 동해물과 "백두산"이
+console.log('동해물과 \'백두산\'이');// 동해물과 '백두산'이
+
+console.log("동해물과 \n백두산이");// 동해물과 
+                                 // 백두산이
+
+console.log("동해물과 \t백두산이");// 동해물과 	백두산이
+
+console.log("동해물과" + "12324" + "백두산이");// 동해물과12324백두산이
+
+console.log("===================================================");
+console.log("# && || 연산지");
+console.log((5>3) && (5<3)); //T && F ==> F
+console.log((5>3) || (5<3)); //T || F ==> T
+console.log(!((5>3) || (5<3))); //!(T || F) ==> F
+
+
+</SCript>
+
+</html>
