@@ -12,9 +12,9 @@
 </head>
 
 <body>
-	<div id="dataArea">
+   <div id="dataArea">
         <table border="1" width="540px">
-            <tr>
+            <tr id="t1">
                 <td>1</td>
                 <td>이효리</td>
                 <td>2022-10-10</td>
@@ -27,7 +27,7 @@
         <br>
         
         <table border="1" width="540px">
-            <tr>
+            <tr id="t2">
                 <td>2</td>
                 <td>유재석</td>
                 <td>2022-09-09</td>
@@ -40,7 +40,7 @@
         <br>
     
         <table border="1" width="540px">
-            <tr>
+            <tr id="t3">
                 <td>3</td>
                 <td>정우성</td>
                 <td>2022-08-08</td>
@@ -53,14 +53,54 @@
         <br>
 
         <button id="btnGetDate" type="button">데이터수집</button>
-	</div>
+   </div>
 
-	<br>
+   <br>
 
 </body>
 
 <script>
 
+    let guestbookList = [];
+
+    let tag01 = document.getElementById("t1");
+    let tag02 = document.getElementById("t2");
+    let tag03 = document.getElementById("t3");
+
+    let guestbookVo ={
+        no: tag01.firstElementChild.textContent,
+        name: tag01.firstElementChild.nextElementSibling.textContent,
+        regDate: tag01.firstElementChild.nextElementSibling.nextElementSibling.textContent,
+        content: tag01.nextElementSibling.firstElementChild.textContent
+    };
+
+    guestbookList.push(guestbookVo);
+
+    guestbookVo ={
+        no: tag02.firstElementChild.textContent,
+        name: tag02.firstElementChild.nextElementSibling.textContent,
+        regDate: tag02.firstElementChild.nextElementSibling.nextElementSibling.textContent,
+        content: tag02.nextElementSibling.firstElementChild.textContent
+    };
+
+    guestbookList.push(guestbookVo);
+
+    guestbookVo ={
+        no: tag03.firstElementChild.textContent,
+        name: tag03.firstElementChild.nextElementSibling.textContent,
+        regDate: tag03.firstElementChild.nextElementSibling.nextElementSibling.textContent,
+        content: tag03.nextElementSibling.firstElementChild.textContent
+    };
+
+    guestbookList.push(guestbookVo);
+
+    document.addEventListener("DOMContentLoaded", function(){
+        let btnGetDate = document.querySelector("#btnGetDate");
+        btnGetDate.addEventListener("click", function(){
+            console.log(guestbookList);
+        });
+    });
+   
 
 </script>
 

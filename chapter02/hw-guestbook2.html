@@ -27,18 +27,44 @@
 		</table>
 	</div>
 	<br>
+	
 
 </body>
 
+
 <script>
+	//DOM tree가 완성되었을때
+	document.addEventListener("DOMContentLoaded", function () {
+
+		//등록 버튼을 클릭했을때
+		let btnWrite = document.querySelector("#btnWrite");
+	    btnWrite.addEventListener("click",function(){
+		console.log("btnWrite");
+
+		//태그를 가져온다
+		let name = document.querySelector("#name");
+        let pw = document.querySelector("#pw");
+		let content = document.querySelector("#content");
+
+		//등록
+		//let el = makeDiv(name, pw, content); // newDiv를 el에 담음 
+		//console.log(el);
+
+		//출력
+		let btnWrite = document.querySelector("btnWrite");
+		//btnWrite.textContent = el;
 
 
 
+		});
+		console.log(btnWrite);
+		
 
 
+	});
 
-
-
+		
+			
 
 
 </script>
