@@ -48,11 +48,57 @@
 				<td>02-3333-3333</td>
 			</tr>
 		</tbody>
+		
 	</table>
 
 </body>
 
 <script>
+//DOM tree 생성되었을때
+document.addEventListener("DOMContentLoaded", function(){
+	
+	let tag01 = document.querySelector("h1");
+	console.log(tag01);
+	console.log(tag01.parentElement);
+	
+	console.log("==============================================");
+
+	let tag02 = document.querySelector(".red");
+	console.log(tag02);
+	console.log(tag02.parentElement);
+
+	console.log("==============================================");
+	
+	let tag03 = document.querySelector("#n-3");
+	console.log(tag03);
+	console.log(tag03.parentElement);
+
+	console.log("==============================================");
+
+
+	//이효리
+	let tag04 = document.querySelector("#h-2");
+	console.log(tag04);
+
+	//#h-2 위치일때  본인의 tr의 id값 출력
+	console.log(tag04.parentElement.id);
+
+	//#h-2 위치일때  이효리 이름출력	
+	console.log(tag04.previousElementSibling.textContent)
+
+	//#h-2 위치일때  이효리 회사번호
+	console.log(tag04.nextElementSibling.textContent)
+
+	//#h-2 위치일때  정우성 회사번호
+	//부모 > 앞형제 > 첫번째 자식 > 텍스트
+	console.log(tag04.parentElement.previousElementSibling.firstElementChild.textContent);
+
+	//#h-2 위치일때  박명수 회사번호
+	console.log(tag04.parentElement.nextElementSibling.lastElementChild.textContent);
+
+});
+
+
 </script>
 
 </html>
