@@ -34,27 +34,17 @@
 	//DOM tree 생성이 완료 되었을때
 	document.addEventListener("DOMContentLoaded", function () {
 
-		let liTags = document.querySelectorAll("li");
-		console.log(liTags);
+		let btnAfter = document.querySelector("#btnAfter");
+		
+		//뒤에추가 버튼을 클릭했을때
+		btnAfter.addEventListener("click", function () {
+			console.log("뒤에버튼클릭");
 
-		for (let i = 0; i < liTags.length; i++) {
-			liTags[i].addEventListener("click", function (event) {
-				console.log(i + " 번째 아이템 클릭");
-				//this -> 이벤트 리스너가 붙어 있는 그 요소
-				//event.target -> 사용자가 실제로 클릭한 그 요소
+			let ul = document.querySelector("ul");
 
-				/*
-				//this 예제
-				this.remove(); //삭제
-				this.textContent=""; //비우기
-				*/
-
-				//event.target
-				//event.target.remove();
-				event.target.textContent = "";
-
-			});
-		}
+			let str = "<li>뒤에 추가된 아이템 입니다.</li>";
+			ul.insertAdjacentHTML("beforeend", str);
+		});
 
 	});
 
